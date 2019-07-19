@@ -1,75 +1,137 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+      @media @phone {
+        font-size: @font-size-phone;
+      }
     }
-  
+  }
+
+  .spaceImg {
+    border-radius: 10px;
+    @media @phone {
+      width: 100%;
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      padding: 10px;
+    }
+
+    .blast {
+      animation-duration: 2s;
+    }
+    .sky {
+      animation-duration: 2s;
+    }
+    .launch {
+      animation-duration: 2s;
+    }
+
+    .space-walk {
+      animation-duration: 3s;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+    @media @phone {
+      .sky,
+      .launch {
+        display: none;
+      }
     }
   }
+}
 
-  .visit-planets {
-    padding: 15px;
+.visit-planets {
+  padding: 15px;
+
+  h3 {
+    margin-top: 11px;
+  }
+
+  p {
+    margin-top: 13px;
+
+    @media @phone {
+      font-size: @font-size-phone;
+    }
+  }
+}
+
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid @main-border-color;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+
+  @media @phone {
+    flex-wrap: wrap-reverse;
+    padding: 20px 20px;
+    margin-top: 30px;
+  }
+
+  .walk-text {
+    width: 50%;
+
+    @media @phone {
+      width: 100%;
+    }
 
     h3 {
-      margin-top: 11px;
+      margin-bottom: 10px;
     }
 
     p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
+      margin-bottom: 26px;
+      @media @phone {
+        font-size: @font-size-phone;
       }
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
+    .btn {
+      .regButton();
+      .spaceWalkButton(@btn-bg-color, @btn-bg-color, @porcelain);
+
+      @media @phone {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
       }
     }
   }
-}// home
+
+  .walk-img {
+    width: 60%;
+    margin-left: 4%;
+    @media @phone {
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+} // home

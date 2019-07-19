@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceWalkers</title>
 
     <link
@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -53,9 +57,21 @@
       </header>
 
       <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off" />
-        <img src="img/sky.png" class="sky" alt="Space sky image" />
-        <img src="img/launch.png" class="launch" alt="Launching rocket" />
+        <img
+          src="img/blast.png"
+          class="blast animated slideInLeft"
+          alt="Rocket blasting off"
+        />
+        <img
+          src="img/sky.png"
+          class="sky animated slideInUp"
+          alt="Space sky image"
+        />
+        <img
+          src="img/launch.png"
+          class="launch animated slideInRight"
+          alt="Launching rocket"
+        />
       </section>
 
       <section class="visit-planets">
@@ -96,7 +112,11 @@
         </div>
 
         <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut" />
+          <img
+            class="space-walk animated slideInDown"
+            src="img/space-walk.png"
+            alt="Space walking astronaut"
+          />
         </div>
       </section>
 

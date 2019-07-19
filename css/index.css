@@ -244,6 +244,18 @@ footer {
     padding: 10px;
   }
 }
+.home .space-images .blast {
+  animation-duration: 2s;
+}
+.home .space-images .sky {
+  animation-duration: 2s;
+}
+.home .space-images .launch {
+  animation-duration: 2s;
+}
+.home .space-images .space-walk {
+  animation-duration: 3s;
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;

@@ -6,3 +6,23 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.regButton {
+  color: @porcelain;
+  background-color: @btn-bg-color;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: @border-radius;
+}
+
+.spaceWalkButton(@color, @border,@backgroundColor) {
+  &:hover {
+    color: @btn-bg-color;
+    background: @porcelain;
+    border: 1px solid @btn-bg-color;
+    cursor: pointer;
+    transition: 1s;
+  }
+}

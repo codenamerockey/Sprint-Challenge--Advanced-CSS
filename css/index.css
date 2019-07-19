@@ -1,3 +1,12 @@
+.regButton {
+  color: #f6f7f8;
+  background-color: #22283a;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +210,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .spaceImg {
+  border-radius: 10px;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +236,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 50px 10px;
   display: flex;
   justify-content: center;
 }
@@ -237,8 +249,24 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  color: #f6f7f8;
+  background-color: #22283a;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background: #f6f7f8;
+  border: 1px solid #22283a;
+  cursor: pointer;
+  transition: 1s;
+}
 .home .walk .walk-img {
-  width: 46%;
+  width: 60%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
